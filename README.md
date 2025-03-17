@@ -1,3 +1,5 @@
+# Simulation of sixty thousand home AC units
+
 ### Python packages supporting simulation - NumPy, SymPy
 
 NumPy is used to randomly determine the thermal parameters of a set of 60,000 home air conditioners and homes, such that the parameters have lognormal distributions.
@@ -12,12 +14,12 @@ The specific values that were used to initialize the thermal parameters and the 
 
 ### Running simulation and obtaining output
 
-A Jupyter notebook was run to initialize the population of air conditioners and simulate their behavior. At the end of the notebook, a plot was generated of the total number of air conditioners in the ON state over the 10-hour simulation.
+A Jupyter notebook was run to initialize the population of air conditioners and simulate their behavior. The simulation of the AC units over 10 simulated hours took 58 seconds on an M1 laptop. At the end of the notebook, a plot was generated of the total number of air conditioners in the ON state over the course of the simulation.
 
-The time needed to initialize the parameters and perform the simulation can be viewed easily in the HTML version of the Jupyter notebook at https://htmlpreview.github.io/?https://github.com/nickpowersys/sixty-thousand-homes-simulation/blob/main/home_hvacs_simulation.html.
+An HTML version of the Jupyter notebook is at https://htmlpreview.github.io/?https://github.com/nickpowersys/sixty-thousand-homes-simulation/blob/main/home_hvacs_simulation.html.
 
 To create a virtual environment locally and run the notebook, first clone the repository and use `uv venv && uv sync`. The kernel at .venv/bin/python should be selected.
 
 To launch the notebook from the local venv,
 
-`uv run --with jupyter jupyter lab` and open the notebook `home_hvacs_simulation.ipynb`
+`uv run --with jupyter jupyter lab` and open the notebook `home_hvacs_simulation.ipynb`.
