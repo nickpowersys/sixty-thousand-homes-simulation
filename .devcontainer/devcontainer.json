@@ -1,0 +1,6 @@
+{
+    "build": { "dockerfile": "Dockerfile", "context": ".." },
+    "containerUser": "vscode",
+    "remoteUser": "vscode",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+  }
